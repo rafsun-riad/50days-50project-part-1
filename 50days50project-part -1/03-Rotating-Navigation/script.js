@@ -1,11 +1,7 @@
-const openNav = document.querySelector("#open");
-const closeNav = document.querySelector("#close");
-const container = document.querySelector(".container");
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const container = document.querySelector('.container');
 
-openNav.addEventListener("click", () => {
-	container.classList.add("show-nav");
-});
+open.addEventListener('click', () => container.classList.add('show-nav'));
 
-closeNav.addEventListener("click", () => {
-	container.classList.remove("show-nav");
-});
+close.addEventListener('click', () => container.classList.remove('show-nav'));
